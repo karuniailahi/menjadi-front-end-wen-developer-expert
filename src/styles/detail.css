@@ -1,0 +1,108 @@
+ 
+/*
+  Restaurant Detail
+*/
+  
+.detail {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    
+  .restaurant .restaurant__poster {
+    width: 100%;
+    border-radius: 5px;
+  }
+    
+  .restaurant .restaurant__info span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .detail .description {
+    margin-top: 20px;
+    display: grid !important;
+  }
+    
+  /*
+    Detail menu Restaurant
+  */
+  
+  .detail__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .detail__menu .content {
+    min-width: 90%;
+  }
+  
+  .detail__menu .menu {
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .detail__menu .menu-item {
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #aaaaaa;
+    margin: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .detail__menu .item {
+    margin-top: auto;
+    color:#fff;
+  }
+  
+  .restaurant__reviews .review {
+    margin-bottom: 20px;
+    padding: 8px;
+  }
+  
+  .restaurant__reviews .name {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 600;
+  }
+  
+  .restaurant__reviews .date {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: black;
+  }
+  
+  .restaurant__reviews .review-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  /*
+     Like
+  */
+  .like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

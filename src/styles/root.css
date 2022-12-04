@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #FDF6EC;
+    --secondary-color: #1310d8;
+    --liner-gradient: linear-gradient(71.9deg, #354c6282 10.77%, #8633332b 92.46%)
+}
+[data-theme="dark"] {
+    --primary-color: #080808;
+    --secondary-color: #f50a0a;
+    --font-color: #d3d3d3;
+    --image-color: linear-gradient(
+      71.9deg,
+      rgba(140, 200, 255, 0.712) -3.77%,
+      rgba(255, 109, 109, 0.582) 92.46%
+    );
+    --hover-navbar: rgba(0, 0, 0, 0.746);
+    --box-shadow: rgba(255, 255, 255, 0.135);
+    --btn: rgba(219, 42, 42);
+    --btn-hover: rgb(250, 58, 58);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+}
+   
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

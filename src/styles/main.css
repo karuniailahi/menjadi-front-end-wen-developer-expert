@@ -1,0 +1,236 @@
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  z-index: 100;
+  line-height: 44px;
+  display: inline-block;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+  
+/*
+  AppBar
+*/
+  
+.app-bar { 
+  padding: 8px 16px;
+  background-color: rgb(25, 11, 235);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+  
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 33px;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 44px;
+}
+  
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+  
+.app-bar .app-bar__brand h1 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: inline-block;
+  line-height: 44px;
+}
+  
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 75px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: rgb(41, 6, 240);
+  overflow: hidden;
+  border-radius: 0px 0px 28px 0px;
+}
+  
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+  
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: inline-block;
+  line-height: 44px;
+}
+
+.app-bar .app-bar__navigation ul li a:hover {
+  font-size: 15px;
+}
+.app-bar .app-bar__navigation button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.8965rem;
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 1.38;
+  vertical-align: middle;
+}
+
+
+.app-bar .app-bar__navigation button:hover {
+  text-decoration: underline;
+  color: var(--hover-navbar);
+}
+
+/* 
+Hero Image 
+*/
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../public/images/heroes/hero-image_2.jpg");
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.hero-text {
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-tagline {
+  font-size: 24px;
+}
+   
+/*
+  Main Content
+*/
+  
+main {
+ flex: 1;
+}
+  
+.content {
+  margin: 22px 0;
+  min-height: 100%;
+}
+  
+.content .content__heading {
+  font-weight: bold;
+  text-align: center;
+}
+  
+/*
+  Movies
+*/
+  
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 22px 0;
+}
+  
+/*
+  Movie Item
+*/
+  
+.restaurant-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+  
+.restaurant-item__header {
+  position: relative;
+}
+  
+.restaurant-item .restaurant-item__header .restaurant-item__header__poster {
+  width: 100%;
+}
+  
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: rgb(238, 81, 9);
+  color: rgb(63, 9, 9);
+  opacity: 80%;
+  border-radius: 0px 8px 8px 0px;
+}
+  
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating .restaurant-item__header__rating__score {
+  margin-left: 10px;
+}
+  
+.restaurant-item .restaurant-item__content {
+  padding: 16px;
+}
+  
+.restaurant-item .restaurant-item__content h3 {
+  margin: 0 0 10px 0;
+}
+  
+.restaurant-item .restaurant-item__content h3 a {
+  color:rgb(245, 12, 82);
+  text-decoration: none;
+  display: inline-block;
+  line-height: 44px;
+}
+  
+.restaurant-item .restaurant-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
